@@ -22,4 +22,4 @@ end
 # You can handle all padrino applications using instead:
 #   Padrino.application
 #Capybara.default_driver = :selenium
-Capybara.app = JobVacancy::App.tap { |app|  }
+Capybara.app = Aulas::App.tap { |app|  }
