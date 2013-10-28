@@ -1,9 +1,9 @@
 Aulas
 =====
 
-Nombre del proyecto Gestión de Aulas UNQ:
+Nombre del proyecto Aulas:
 
-Gestión de Aulas UNQ (a.k.a. GAUNQ)
+Aulas
 
 Visión/Objetivo: 
 
