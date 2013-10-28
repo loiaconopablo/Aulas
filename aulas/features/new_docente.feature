@@ -14,6 +14,4 @@ Feature: Nuevo Docente
     And I fill the email with "npaez@gmail.com"
     And confirm the new docente    
     Then I should see "Docente creado"
-    And I should see "Nico" in Profesores
-    And I should see "Paez" in Profesores
-    And I should see "npaez@gmail.com" in Profesores
+    

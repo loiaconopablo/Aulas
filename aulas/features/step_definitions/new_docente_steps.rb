@@ -22,6 +22,3 @@ When(/^confirm the new docente$/) do
   pending 
 end
 
-Then(/^I should see "(.*?)" in Profesores$/) do |arg1|
-  pending 
-end

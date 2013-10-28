@@ -1,13 +1,20 @@
 Feature: Login
 
-  Como admin del site
-  Quiero poder logearme a la aplicacion
-  Para poder crear las aulas, ver y aprobar las peticiones
+  Como usuario (ya sea como admin o docente) del site
+  Quiero poder logearme a la aplicacion.
 
-  Scenario: Navegar la pagina de inicio
+  Scenario: Login Correcto
       When I browse the default page
       Then I should see "login"
-      And I fill the email with "admin@admin.com"
-      And I fill the password with "root"
+      And I fill the email with "admin@aulas.com"
+      And I fill the password with "admin"
       And confirm the login
       Then I should see "admin@admin.com"
+
+    Scenario: Login Incorrecto
+      When I browse the default page
+      Then I should see "login"
+      And I fill the email with "admin@aulas.com"
+      And I fill the password with "erronea"
+      And confirm the login
+      Then I should see "login incorrecto"
