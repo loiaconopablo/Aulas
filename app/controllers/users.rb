@@ -1,4 +1,4 @@
-JobVacancy::App.controllers :users do
+Aulas::App.controllers :users do
   
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'

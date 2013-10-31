@@ -5,8 +5,8 @@ class User
   property :name, String
   property :crypted_password, String
   property :email, String
-  has n, :job_offers
-
+  property :type, String
+  
   validates_presence_of :name
   validates_presence_of :crypted_password
   validates_presence_of :email
@@ -27,3 +27,4 @@ class User
   end
 
 end
+

@@ -1,0 +1,5 @@
+bundle install
+bundle exec rake
+PADRINO_ENV=development bundle exec rake db:create
+PADRINO_ENV=development bundle exec rake db:seed
+PADRINO_ENV=development bundle exec padrino start

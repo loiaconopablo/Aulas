@@ -1,4 +1,4 @@
-JobVacancy::App.controllers :job_offers do
+Aulas::App.controllers :job_offers do
   
   get :my do
     @offers = JobOffer.find_by_owner(current_user)

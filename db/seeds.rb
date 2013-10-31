@@ -1,4 +1,5 @@
 
-user = User.create(:email => 'offerer@test.com',
-									 :name => 'Offerer', 
-									 :password => "Passw0rd!")
+user = Admin.create(:email => 'admin@aulas.com',
+									 :name => 'Administrador', 
+									 :type => 'admin', 
+									 :password => "admin")
