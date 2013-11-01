@@ -11,11 +11,12 @@ Aulas::App.controllers :sessions do
     @user = User.authenticate(email, password)
     if (@user.nil?)
       @user = User.new
-      flash.now[:error] = 'Invalid credentials'
+      flash.now[:error] = 'Credenciales Invalidas'
       render 'sessions/new'
     else
       sign_in @user
-      redirect '/'          
+      flash[:success] = 'Login Correcto'
+      redirect '/'   
     end
   end
 

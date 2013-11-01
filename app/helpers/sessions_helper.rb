@@ -21,4 +21,11 @@ Aulas::App.helpers do
 		!current_user.nil?
 	end
 
+	def signed_in_who?(user_type)
+		if self.signed_in?
+				current_user.type == user_type
+		end
+	end
+
+
 end
