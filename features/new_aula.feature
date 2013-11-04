@@ -12,5 +12,4 @@ Feature: Crear Aula
     When I fill the nombre with "Aula TPI"
     When I fill the capacidad with "30"
     And confirm the new aula    
-    Then I should see "Aula creada" in Mis Aulas
-    And I should see "Aula TPI" in Mis Aulas
+    And I should see "Aula TPI" in Aulas

@@ -55,7 +55,6 @@ end
 #     | Expiry date    | 2009-11-01 |
 #     | Note           | Nice guy   |
 #     | Wants Email?   |            |
-#
 # TODO: Add support for checkbox, select og option
 # based on naming conventions.
 #

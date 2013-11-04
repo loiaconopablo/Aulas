@@ -15,10 +15,9 @@ When(/^confirm the new aula$/) do
 end
 
 Then(/^I should see "(.*?)" in Mis Aulas$/) do |nombre|
-pending
 # Deberia ser algo como:::
- #visit 'aulas/listado'
-# page.should have_content(nombre)
+ visit 'listar'
+ page.should have_content(nombre)
 end
 
 

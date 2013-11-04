@@ -162,7 +162,7 @@
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/mint/Escritorio/Aulas/app/controllers/aulas.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/controllers/aulas.rb": [
         1,
         null,
         1,
@@ -172,11 +172,6 @@
         null,
         1,
         0,
-        0,
-        null,
-        null,
-        null,
-        1,
         0,
         null,
         null,
@@ -195,7 +190,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/controllers/home.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/controllers/home.rb": [
         1,
         null,
         1,
@@ -204,7 +199,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/controllers/job_offers.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/controllers/job_offers.rb": [
         1,
         null,
         1,
@@ -275,7 +270,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/controllers/sessions.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/controllers/sessions.rb": [
         1,
         null,
         1,
@@ -305,7 +300,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/controllers/users.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/controllers/users.rb": [
         1,
         null,
         null,
@@ -353,7 +348,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/helpers/aulas_helper.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/helpers/aulas_helper.rb": [
         null,
         null,
         1,
@@ -362,7 +357,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/helpers/home_helper.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/helpers/home_helper.rb": [
         null,
         null,
         1,
@@ -371,7 +366,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/helpers/job_offers_helper.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/helpers/job_offers_helper.rb": [
         null,
         null,
         1,
@@ -380,7 +375,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/helpers/sessions_helper.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/helpers/sessions_helper.rb": [
         1,
         null,
         1,
@@ -413,7 +408,7 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/helpers/users_helper.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/helpers/users_helper.rb": [
         null,
         null,
         1,
@@ -423,6 +418,6 @@
         null
       ]
     },
-    "timestamp": 1383596859
+    "timestamp": 1383604350
   }
 }
