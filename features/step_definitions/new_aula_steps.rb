@@ -11,14 +11,14 @@ When(/^I fill the capacidad with "(.*?)"$/) do |cantidad|
 end
 
 When(/^confirm the new aula$/) do
-	pending
-	#falta el modelo para poder persistir el aula
-  #click_button('Aceptar')
+	click_button('Aceptar')
 end
 
 Then(/^I should see "(.*?)" in Mis Aulas$/) do |nombre|
-  pending
-	#depende del anterior
+pending
+# Deberia ser algo como:::
+ #visit 'aulas/listado'
+# page.should have_content(nombre)
 end
 
 

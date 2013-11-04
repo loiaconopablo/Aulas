@@ -1,0 +1,33 @@
+<h1>Listado de Aulas</h1>
+<table class="table table-bordered">
+	<tr>
+		<th>Nombre</th>
+		<th>Cantidad de Alumnos</th>
+		<th>Proyector</th>
+		<th>Tipo de Pizarron</th>
+		<th>Cantidad de PC</th>
+	</tr>
+	<% @aulas.each do | aula| %>
+
+	<tr>
+		<td>
+			<%= aula.nombre %>
+		</td>
+		<td>
+			<%= aula.capacidad %>
+		</td>
+		<td>
+			<%= aula.proyector %>
+		</td>	
+		<td>
+			<%= aula.tipodepizarra %>
+		</td>	
+		<td>
+			<%= aula.computadoras %>
+		</td>			
+		
+	</tr>
+
+  <% end %>
+
+</table>
