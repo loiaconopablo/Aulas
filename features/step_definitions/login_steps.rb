@@ -1,7 +1,6 @@
 When(/^I browse the default page$/) do
   visit '/'
   page.should have_content('Bienvenido al sistema de gestion de Aulas')
-  #visit '/'
 end
 
 Then(/^I should see "(.*?)" in Index/) do |content|
