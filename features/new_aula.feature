@@ -9,8 +9,8 @@ Feature: Crear Aula
   
   Scenario: Crear nueva aula
     Given I access the new aula page
-    When I fill the title with "Aula TPI"
-    When I fill the cantidad with "30"
+    When I fill the nombre with "Aula TPI"
+    When I fill the capacidad with "30"
     And confirm the new aula    
     Then I should see "Aula Creada"
     And I should see "Aula TPI" in Mis Aulas

@@ -1,0 +1,8 @@
+<h1>Nueva aula</h1>
+<% form_for(@aula, '/aulas/create') do |f| %>
+
+  <%= partial 'aulas/form', :locals => { :f => f } %>
+
+  <%= f.submit "Aceptar", :class => "btn btn-primary" %>
+  <%= link_to 'Cancelar', url_for(:job_offers, :my), :class => "btn btn-secondary" %>
+<% end %>
