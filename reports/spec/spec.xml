@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="18" failures="0" errors="0" time="0.617433" timestamp="2013-11-06T14:47:42-03:00">
+<testsuite tests="18" failures="0" errors="0" time="0.687932" timestamp="2013-11-06T15:26:56-03:00">
   <properties/>
-  <testcase classname="spec.app.controllers.home_controller_spec" name="HomeController default should return Comming soon!" time="0.577570"/>
-  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should response ok" time="0.027092"/>
-  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should render users/login" time="0.002334"/>
-  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should response ok" time="0.001859"/>
-  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should render users/new" time="0.001732"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #id" time="0.003316"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #nombre" time="0.000217"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #capacidad" time="0.000165"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #proyector" time="0.000157"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #tipodepizarra" time="0.000171"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #computadoras" time="0.000156"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #tipodeaula" time="0.000163"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #observaciones" time="0.000153"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #id" time="0.000229"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #name" time="0.000149"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #crypted_password" time="0.000164"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #email" time="0.000146"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #type" time="0.000139"/>
+  <testcase classname="spec.app.controllers.home_controller_spec" name="HomeController default should return Comming soon!" time="0.628959"/>
+  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should response ok" time="0.026902"/>
+  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should render users/login" time="0.001877"/>
+  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should response ok" time="0.002031"/>
+  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should render users/new" time="0.001785"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #id" time="0.022387"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #nombre" time="0.000151"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #capacidad" time="0.000113"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #proyector" time="0.000113"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #tipodepizarra" time="0.000120"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #computadoras" time="0.000111"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #tipodeaula" time="0.000109"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #observaciones" time="0.000124"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #id" time="0.000132"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #name" time="0.000110"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #crypted_password" time="0.000111"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #email" time="0.000110"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #type" time="0.000109"/>
 </testsuite>
