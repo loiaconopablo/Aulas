@@ -5,7 +5,7 @@ migration 2, :create_aulas do
       column :nombre, DataMapper::Property::String, :length => 255
       column :capacidad, DataMapper::Property::Integer
       column :proyector, DataMapper::Property::Boolean, :default  => false
-      column :tipoDePizarra, DataMapper::Property::String, :length => 255
+      column :tipodepizarra, DataMapper::Property::String, :length => 255
       column :computadoras, DataMapper::Property::Integer
     end
   end

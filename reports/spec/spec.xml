@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="16" failures="6" errors="0" time="0.009520" timestamp="2013-11-05T13:24:12-03:00">
+<testsuite tests="16" failures="6" errors="0" time="0.010973" timestamp="2013-11-06T01:29:39-03:00">
   <properties/>
-  <testcase classname="spec.app.controllers.home_controller_spec" name="HomeController default should return Comming soon!" time="0.001138">
+  <testcase classname="spec.app.controllers.home_controller_spec" name="HomeController default should return Comming soon!" time="0.001213">
     <failure message="uninitialized constant JobVacancy" type="NameError">
       <![CDATA[uninitialized constant JobVacancy
 ./spec/app/controllers/home_controller_spec.rb:8:in `block (3 levels) in <top (required)>']]>
     </failure>
   </testcase>
-  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should response ok" time="0.001034">
+  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should response ok" time="0.001353">
     <failure message="uninitialized constant JobVacancy" type="NameError">
       <![CDATA[uninitialized constant JobVacancy
 ./spec/app/controllers/sessions_controller_spec.rb:9:in `block (3 levels) in <top (required)>']]>
     </failure>
   </testcase>
-  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should render users/login" time="0.000737">
+  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should render users/login" time="0.001034">
     <failure message="uninitialized constant JobVacancy" type="NameError">
       <![CDATA[uninitialized constant JobVacancy
 ./spec/app/controllers/sessions_controller_spec.rb:15:in `block (3 levels) in <top (required)>']]>
     </failure>
   </testcase>
-  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should response ok" time="0.000949">
+  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should response ok" time="0.001388">
     <failure message="uninitialized constant JobVacancy" type="NameError">
       <![CDATA[uninitialized constant JobVacancy
 ./spec/app/controllers/users_controller_spec.rb:9:in `block (3 levels) in <top (required)>']]>
     </failure>
   </testcase>
-  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should render users/new" time="0.000909">
+  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should render users/new" time="0.001103">
     <failure message="uninitialized constant JobVacancy" type="NameError">
       <![CDATA[uninitialized constant JobVacancy
 ./spec/app/controllers/users_controller_spec.rb:15:in `block (3 levels) in <top (required)>']]>
     </failure>
   </testcase>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #id" time="0.001523"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #nombre" time="0.000154"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #id" time="0.002220"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #nombre" time="0.000122"/>
   <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #capacidad" time="0.000138"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #proyector" time="0.000130"/>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #tipoDePizarra" time="0.000259">
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #proyector" time="0.000107"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #tipoDePizarra" time="0.000271">
     <failure message="expected #&lt;Aula @id=nil @nombre=nil @capacidad=nil @proyector=nil @tipodepizarra=nil @computadoras=nil&gt; to respond to :tipoDePizarra" type="RSpec::Expectations::ExpectationNotMetError">
       <![CDATA[expected #<Aula @id=nil @nombre=nil @capacidad=nil @proyector=nil @tipodepizarra=nil @computadoras=nil> to respond to :tipoDePizarra
 ./spec/app/models/aulas_spec.rb:13:in `block (3 levels) in <top (required)>']]>
     </failure>
   </testcase>
-  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #computadoras" time="0.000139"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #id" time="0.000133"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #name" time="0.000114"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #crypted_password" time="0.000109"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #email" time="0.000107"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #type" time="0.000103"/>
+  <testcase classname="spec.app.models.aulas_spec" name="Aulas model should respond to #computadoras" time="0.000112"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #id" time="0.000137"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #name" time="0.000108"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #crypted_password" time="0.000107"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #email" time="0.000106"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #type" time="0.000136"/>
 </testsuite>

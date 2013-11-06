@@ -2,23 +2,38 @@ Given(/^I access the new aula page$/) do
   visit 'aulas/new'
 end
 
-When(/^I fill the nombre with "(.*?)"$/) do |nombre|
+When(/^I fill all requeriments correctly with name "(.*?)"$/) do |nombre|
   fill_in('aula[nombre]', :with => nombre)
+  fill_in('aula[capacidad]', :with => "10")
+	fill_in('aula[tipodepizarra]', :with => "tiza")
+	fill_in('aula[computadoras]', :with => "0")		
 end
 
-When(/^I fill the capacidad with "(.*?)"$/) do |cantidad|
-  fill_in('aula[capacidad]', :with => cantidad)
+Then(/^I should see "(.*?)" in Aulas$/) do |nombre|
+	page.should have_content("Aula creada")
+  page.should have_content(nombre)
 end
+
+Then(/^I should not see "(.*?)" in Aulas$/) do |nombre|
+  page.should have_no_content(nombre)
+end
+
 
 When(/^confirm the new aula$/) do
 	click_button('Aceptar')
 end
 
-Then(/^I should see "(.*?)" in Mis Aulas$/) do |nombre|
-# Deberia ser algo como:::
- visit 'listar'
- page.should have_content(nombre)
+
+When(/^cancel the new aula$/) do
+	click_link('Cancelar')
 end
+
+When(/^I fill all requeriments incorrectly with name "(.*?)"$/) do |nombre|
+  fill_in('aula[nombre]', :with => nombre)
+  fill_in('aula[capacidad]', :with => "10")		
+end
+
+ 
 
 
 

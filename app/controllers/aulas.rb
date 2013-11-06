@@ -12,12 +12,11 @@ Aulas::App.controllers :aulas do
 
   post :create do
     @aula = Aula.new(params[:aula])
-    #@aula.owner = current_user
     if @aula.save
       flash[:success] = 'Aula creada'
       redirect 'aulas/listar'
     else
-      flash.now[:error] = 'El nombre es obligatorio'
+      flash.now[:error] = 'Completar todos los datos'
       render 'aulas/new'
     end  
   end

@@ -10,7 +10,7 @@ class Aula
 	property :computadoras, Integer
 	
 	validates_presence_of :nombre
-	
+
 end
 
 

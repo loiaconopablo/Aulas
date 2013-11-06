@@ -28,7 +28,7 @@
                 
                 <% if signed_in_who?("admin") %>	
                 <li><%= link_to 'Crear Aula', url_for(:aulas, :new) %></li>
-                <li><%= link_to 'Alta Docente', url_for(:job_offers, :my) %></li>
+                <li><%= link_to 'Alta Docente', url_for(:home, :index) %></li>
 
 								<% end %>
 								<% if signed_in? %>	

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/mint/Escritorio/Aulas/app/app.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/app.rb": [
         1,
         1,
         1,
@@ -68,41 +68,18 @@
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/models/admin.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/models/admin.rb": [
         1,
         null,
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/models/aula.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/models/aula.rb": [
         1,
         1,
         null,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/mint/Escritorio/Aulas/app/models/docente.rb": [
-        1,
-        null,
-        null,
-        null
-      ],
-      "/home/mint/Escritorio/Aulas/app/models/job_offer.rb": [
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         1,
@@ -113,19 +90,20 @@
         null,
         1,
         0,
-        null,
-        null,
-        1,
         0,
         null,
         null,
-        1,
-        0,
         null,
         null,
         null
       ],
-      "/home/mint/Escritorio/Aulas/app/models/user.rb": [
+      "/home/mint/Documents/aulasRepo/Aulas/app/models/docente.rb": [
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/mint/Documents/aulasRepo/Aulas/app/models/user.rb": [
         1,
         1,
         null,
@@ -158,7 +136,7 @@
         null
       ]
     },
-    "timestamp": 1383668652
+    "timestamp": 1383712179
   },
   "Cucumber Features": {
     "coverage": {
@@ -166,8 +144,8 @@
         1,
         null,
         1,
-        1,
-        1,
+        0,
+        0,
         null,
         null,
         1,
@@ -176,14 +154,13 @@
         null,
         null,
         1,
-        1,
-        null,
-        1,
+        0,
+        0,
         0,
         0,
         null,
-        1,
-        1,
+        0,
+        0,
         null,
         null,
         null,
@@ -194,7 +171,7 @@
         1,
         null,
         1,
-        1,
+        5,
         null,
         null,
         null
@@ -274,22 +251,22 @@
         1,
         null,
         1,
-        1,
-        1,
+        4,
+        4,
         null,
         null,
         1,
+        4,
+        4,
+        4,
+        4,
         1,
         1,
         1,
-        1,
-        0,
-        0,
-        0,
         null,
-        1,
-        1,
-        1,
+        3,
+        3,
+        3,
         null,
         null,
         null,
@@ -379,16 +356,16 @@
         1,
         null,
         1,
-        1,
+        3,
         null,
         null,
         1,
-        18,
+        36,
         null,
         null,
         1,
-        1,
-        1,
+        3,
+        3,
         null,
         null,
         1,
@@ -396,11 +373,11 @@
         null,
         null,
         1,
-        12,
+        30,
         null,
         null,
         1,
-        4,
+        10,
         3,
         null,
         null,
@@ -418,6 +395,6 @@
         null
       ]
     },
-    "timestamp": 1383604350
+    "timestamp": 1383712805
   }
 }
