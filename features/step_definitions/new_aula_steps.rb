@@ -5,8 +5,6 @@ end
 When(/^I fill all requeriments correctly with name "(.*?)"$/) do |nombre|
   fill_in('aula[nombre]', :with => nombre)
   fill_in('aula[capacidad]', :with => "10")
-	fill_in('aula[tipodepizarra]', :with => "tiza")
-	fill_in('aula[computadoras]', :with => "0")		
 end
 
 Then(/^I should see "(.*?)" in Aulas$/) do |nombre|
@@ -29,8 +27,7 @@ When(/^cancel the new aula$/) do
 end
 
 When(/^I fill all requeriments incorrectly with name "(.*?)"$/) do |nombre|
-  fill_in('aula[nombre]', :with => nombre)
-  fill_in('aula[capacidad]', :with => "10")		
+  fill_in('aula[nombre]', :with => nombre)	
 end
 
  

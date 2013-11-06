@@ -1,10 +1,12 @@
-<h1>Nueva aula</h1>
+<h1>Nueva aula</h1> <h5>Los campos con (*) son obligatorios</h5>
 <% form_for(@aula, '/aulas/create') do |f| %>
 
   <%= partial 'aulas/form', :locals => { :f => f } %>
 
-  <%= f.submit "Aceptar", :class => "btn btn-primary" %>
+  <div align="right">
   <%= link_to 'Cancelar', url_for(:aulas, :listar), :class => "btn btn-secondary" %>
+  <%= f.submit "Aceptar", :class => "btn btn-primary" %>
+	</div> 
 <% end %>
 
 

@@ -7,9 +7,12 @@ class Aula
 	property :capacidad, Integer
 	property :proyector, Boolean
 	property :tipodepizarra, String
-	property :computadoras, Integer
+	property :computadoras, Boolean
+  property :tipodeaula, String
+	property :observaciones, String
 	
 	validates_presence_of :nombre
+	validates_presence_of :capacidad
 
 end
 

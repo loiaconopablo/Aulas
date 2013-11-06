@@ -16,7 +16,7 @@ Aulas::App.controllers :aulas do
       flash[:success] = 'Aula creada'
       redirect 'aulas/listar'
     else
-      flash.now[:error] = 'Completar todos los datos'
+      flash.now[:error] = 'Completar correctamente los campos obligatorios'
       render 'aulas/new'
     end  
   end

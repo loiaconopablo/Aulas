@@ -10,8 +10,10 @@ describe Aulas do
 		it { should respond_to( :nombre ) }
 		it { should respond_to( :capacidad) }
 		it { should respond_to( :proyector ) }
-		it { should respond_to( :tipoDePizarra ) }
+		it { should respond_to( :tipodepizarra ) }
 		it { should respond_to( :computadoras ) }
+		it { should respond_to( :tipodeaula ) }
+		it { should respond_to( :observaciones ) }
 
 	end
 

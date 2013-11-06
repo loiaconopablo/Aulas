@@ -23,5 +23,7 @@ Feature: Crear Aula
     Given I access the new aula page
     When I fill all requeriments incorrectly with name "Aula prueba 3"
     And confirm the new aula
-		Then I should see "Completar todos los datos"   
+		Then I should see "Completar correctamente los campos obligatorios"   
     Then I should not see "Aula prueba 3" in Aulas
+
+

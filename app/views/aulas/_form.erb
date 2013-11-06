@@ -1,15 +1,18 @@
-	<%= f.label :Nombre %>
+	<%= f.label :"Nombre (*)" %>
  	<%= f.text_field :nombre, :class => "input-block-level" %>
-  <%= f.label :Capacidad %>
+  <%= f.label :"Capacidad (numero) (*)" %>
   <%= f.number_field :capacidad, :class => "input-block-level" %>
-  <%= f.label :Proyector %>
+  <%= f.label :"Tiene proyector? Si tiene, marque la casilla" %>
   <%= f.check_box :proyector, :class => "input-block-level"  %>
+</br>
   <%= f.label :"Tipo De Pizarra" %>
-  <%= f.text_field :tipodepizarra, :class => "input-block-level" %>
-  <%= f.label :Computadoras %>
-  <%= f.number_field :computadoras, :class => "input-block-level" %>
-
-
-		
-
-  <br/>
+  <%= f.select :tipodepizarra, :options => ['Para tiza', 'Para fibron'] %>
+  <%= f.label :"Tiene computadoras? Si es asi, indicar la cantidad en las observaciones" %>
+  <%= f.check_box  :computadoras, :class => "input-block-level" %>
+</br>
+  <%= f.label :"Tipo De Aula" %>
+  <%= f.select :tipodeaula, :options => ['Standard', 'Laboratorio']  %>
+  <%= f.label :"Observaciones" %>
+  <%= f.text_area :observaciones, :class => "input-block-level" %>
+ 
+<br/>
