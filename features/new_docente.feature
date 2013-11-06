@@ -1,4 +1,4 @@
-Feature: Nuevo Docente
+Feature: Nuevo Docente (story extra, en curso)
 
   Como admin del site
   Quiero poder dar de alta docentes

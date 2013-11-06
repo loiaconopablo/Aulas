@@ -10,10 +10,6 @@ Given(/^I access the new docente page$/) do
   pending 
 end
 
-When(/^I fill the nombre with "(.*?)" in index$/) do |arg1|
-  pending 
-end
-
 When(/^I fill the apellido with "(.*?)"$/) do |arg1|
   pending 
 end
@@ -27,3 +23,6 @@ When(/^confirm the new docente$/) do
   pending 
 end
 
+When(/^I fill the nombre with "(.*?)"$/) do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
