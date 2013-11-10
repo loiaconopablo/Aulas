@@ -6,6 +6,7 @@ Feature: Login
   Scenario: Login Correcto
       When I browse the default page
       Then I should see "Login"
+      Given I access the login page
       And I fill the email with "admin@aulas.com"
       And I fill the password with "admin"
       And confirm the login
@@ -15,6 +16,7 @@ Feature: Login
   Scenario: Login Incorrecto
       When I browse the default page
       Then I should see "Login"
+      Given I access the login page
       And I fill the email with "admin@aulas.com"
       And I fill the password with "erronea"
       And confirm the login

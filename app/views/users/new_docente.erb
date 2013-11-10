@@ -1,0 +1,15 @@
+<h1>Registracion de nuevo profesor</h1>
+  <% form_for(@user, '/users/create') do |f| %> 
+  <%= f.label :Nombre %>
+  <%= f.text_field :name %>
+  <%= f.label :Apellido %>
+  <%= f.text_field :lastname %>
+  <%= f.label :Email %>
+  <%= f.text_field :email %>
+  <input type="hidden" name="type" value="profesor" />
+  <br/>
+  <input type="hidden" name="crypted_password" value="aula2013" />
+  <br/>
+  <%= f.submit "Dar de Alta", :class => "btn btn-primary" %>
+  <%= link_to 'Cancelar', url_for(:home, :index), :class => "btn btn-secondary" %>
+<% end %>
