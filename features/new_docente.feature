@@ -15,4 +15,13 @@ Feature: Nuevo Docente
     And I fill the email with "npaez@gmail.com"
     And confirm the new docente    
     Then I should see "Docente creado"
+
+ Scenario: Crear nuevo docente con falta de campos
+    Given I access the new docente page
+    Then I should see "Registracion de nuevo profesor" 
+    When I fill the nombre with "Nico"
+    And I fill the email with "npaez@gmail.com"
+    And confirm the new docente    
+    Then I should see "Completar todos los campos"
+
     
