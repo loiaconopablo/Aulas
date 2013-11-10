@@ -8,7 +8,8 @@
   <%= f.text_field :email %>
   <input type="hidden" name="type" value="profesor" />
   <br/>
-  <input type="hidden" name="password" value="aula2013" />
+  <input type="hidden" name="crypted_password" value="aula2013" />
   <br/>
   <%= f.submit "Dar de Alta", :class => "btn btn-primary" %>
+  <%= link_to 'Cancelar', url_for(:home, :index), :class => "btn btn-secondary" %>
 <% end %>

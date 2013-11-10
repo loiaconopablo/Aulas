@@ -20,7 +20,8 @@ RSpec.configure do |conf|
   conf.include Rack::Test::Methods
   DataMapper.setup(:default, "abstract::")
   DataMapper::Logger.new($stdout, :all)
-  #DataMapper.auto_migrate!  LO COMENTE PORQUE SINO FALLAN LOS TEST;; NO REALIZA EL SEED Y NO SE LLENAN LOS USUARIOS 
+  #DataMapper.auto_migrate!  
+  #LO COMENTE PORQUE SINO FALLAN LOS TEST;; NO REALIZA EL SEED Y NO SE LLENAN LOS USUARIOS 
   #A LA BASE
 
 end

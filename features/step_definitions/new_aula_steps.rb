@@ -21,7 +21,6 @@ When(/^confirm the new aula$/) do
 	click_button('Aceptar')
 end
 
-
 When(/^cancel the new aula$/) do
 	click_link('Cancelar')
 end

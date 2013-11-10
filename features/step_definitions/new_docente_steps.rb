@@ -11,18 +11,17 @@ Given(/^I access the new docente page$/) do
 end
 
 When(/^I fill the apellido with "(.*?)"$/) do |arg1|
-  pending 
+  fill_in('user[lastname]', :with => arg1) 
 end
 
 When(/^I fill the email with "(.*?)"$/) do |user_email|
-  visit '/login'
-  fill_in('user[email]', :with => user_email)
+   fill_in('user[email]', :with => user_email)
 end
 
 When(/^confirm the new docente$/) do
-  pending 
+  click_button('Dar de Alta') 
 end
 
 When(/^I fill the nombre with "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+ fill_in('user[name]', :with => arg1)
 end

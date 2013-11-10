@@ -28,3 +28,7 @@ Given(/^I am logged in as profesor$/) do
   click_button('Login')
   page.should have_content('nico@gmail.com')
 end
+
+Given(/^I access the login page$/) do
+  visit '/login'
+end

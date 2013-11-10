@@ -31,7 +31,7 @@ Aulas::App.controllers :users do
       redirect '/'
     else
       flash.now[:error] = 'Completar correctamente los campos obligatorios'
-      render 'users/new'
+      render 'users/new_docente'
     end  
   end
 

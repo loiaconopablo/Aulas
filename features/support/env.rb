@@ -23,5 +23,6 @@ end
 #   Padrino.application
 #Capybara.default_driver = :selenium
 Capybara.app = Aulas::App.tap { |app|  }
-#DataMapper.auto_migrate! LO COMENTE PORQUE SINO FALLAN LOS TEST;; NO REALIZA EL SEED Y NO SE LLENAN LOS USUARIOS 
+#DataMapper.auto_migrate!
+#LO COMENTE PORQUE SINO FALLAN LOS TEST;; NO REALIZA EL SEED Y NO SE LLENAN LOS USUARIOS 
   #A LA BASE
