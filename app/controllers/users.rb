@@ -26,11 +26,13 @@ Aulas::App.controllers :users do
 
   post :create do
     @user = User.new(params[:user])
+    @user.type = params[:typeUser]
+    @user.password= params[:defaultPass]  
     if @user.save
       flash[:success] = 'Docente creado'
       redirect '/'
     else
-      flash.now[:error] = 'Completar correctamente los campos obligatorios'
+      flash.now[:error] = 'Completar todos los campos'
       render 'users/new_docente'
     end  
   end
