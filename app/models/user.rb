@@ -3,11 +3,13 @@ class User
 
   property :id, Serial
   property :name, String
+  property :lastname, String
   property :crypted_password, String
   property :email, String
   property :type, String
   
   validates_presence_of :name
+  validates_presence_of :lastname
   validates_presence_of :crypted_password
   validates_presence_of :email
   validates_format_of   :email,    :with => :email_address

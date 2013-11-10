@@ -7,7 +7,7 @@ Given(/^I am logged in as admin$/) do
 end
 
 Given(/^I access the new docente page$/) do
-  pending 
+  visit '/registracion_profesor'
 end
 
 When(/^I fill the apellido with "(.*?)"$/) do |arg1|
