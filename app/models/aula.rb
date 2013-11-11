@@ -10,6 +10,8 @@ class Aula
 	property :computadoras, Boolean
   property :tipodeaula, String
 	property :observaciones, String
+	property :estado, Boolean
+	#estado en true->Reservada false->Disponible
 	
 	validates_presence_of :nombre
 	validates_presence_of :capacidad

@@ -9,6 +9,7 @@
 		<th>Tipo de aula</th>
 		<th>Observaciones</th>
 		<th>Estado</th>
+		<th>Acciones</th>
 	</tr>
 	<% @aulas.each do | aula| %>
 
@@ -68,8 +69,13 @@
 		</td>
 		<% end %>	
 		
+		<td>
+			<%= link_to 'Pedir', url_for(:pedidos, :new, :aula_id => aula.id , :aula_estado => aula.estado), :class => "btn btn-primary" %>
+		</td>		
+		
 	</tr>
 
   <% end %>
 
 </table>
+

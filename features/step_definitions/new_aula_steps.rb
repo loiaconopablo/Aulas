@@ -10,6 +10,7 @@ end
 Then(/^I should see "(.*?)" in Aulas$/) do |nombre|
 	page.should have_content("Aula creada")
   page.should have_content(nombre)
+  page.should have_content("Disponible")
 end
 
 Then(/^I should not see "(.*?)" in Aulas$/) do |nombre|
