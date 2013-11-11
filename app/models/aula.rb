@@ -8,7 +8,7 @@ class Aula
 	property :proyector, Boolean
 	property :tipodepizarra, String
 	property :computadoras, Boolean
-  property :tipodeaula, String
+  	property :tipodeaula, String
 	property :observaciones, String
 	
 	validates_presence_of :nombre

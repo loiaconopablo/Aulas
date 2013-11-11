@@ -37,5 +37,10 @@ Aulas::App.controllers :users do
     end  
   end
 
+  get :listarDocentes do
+    @docentes = User.all(:type => "profesor")
+    render 'users/listarDocentes'
+  end 
+
 
 end

@@ -25,6 +25,7 @@
               <ul class="nav">
                 <li><%= link_to 'Home', url_for(:home, :index) %></li>
                 <li><%= link_to 'Aulas', url_for(:aulas, :listar) %></li>
+                <li><%= link_to 'Docentes', url_for(:users, :listarDocentes) %></li>
                 
                 <% if signed_in_who?("admin") %>	
                 <li><%= link_to 'Crear Aula', url_for(:aulas, :new) %></li>
