@@ -1,6 +1,6 @@
-<h1>Nueva Consulta para la oferta <%=@pedido.aula.nombre %> </h1> 
+<h1>Confirmar Pedido del Aula <%=@pedido.aula.nombre %> </h1> 
 
-<% form_for(@pedido, '/consulta/create') do |f| %>
+<% form_for(@pedido, '/pedidos/create') do |f| %>
  
   <%= partial 'pedidos/form', :locals => { :f => f } %>
 	
