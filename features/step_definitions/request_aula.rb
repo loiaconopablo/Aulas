@@ -1,4 +1,4 @@
-Given(/^I access the aulas page$/) do
+Given(/^I access the Pedir Aula page$/) do
    page.should have_content("Pedir Aula")
 end
 

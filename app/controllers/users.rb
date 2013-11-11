@@ -30,12 +30,18 @@ Aulas::App.controllers :users do
     @user.password= params[:defaultPass]  
     if @user.save
       flash[:success] = 'Docente creado'
+      Aulas::App.deliver(:notification, :email_notificacion_cuenta, @user)
       redirect '/'
     else
       flash.now[:error] = 'Completar todos los campos'
       render 'users/new_docente'
     end  
   end
+
+  get :listarDocentes do
+    @docentes = User.all(:type => "profesor")
+    render 'users/listarDocentes'
+  end 
 
 
 end

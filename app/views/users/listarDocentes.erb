@@ -1,0 +1,24 @@
+<h1>Listado de Docentes</h1>
+<table class="table table-striped">
+	<tr>
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>E-Mail</th>
+		</tr>
+	<% @docentes.each do | docente| %>
+
+	<tr>
+		<td>
+			<%= docente.name %>
+		</td>
+		<td>
+			<%= docente.lastname %>
+		</td>
+		<td>
+			<%= docente.email %>
+		</td>	
+	</tr>
+
+  <% end %>
+
+</table>
