@@ -25,3 +25,12 @@ end
 When(/^I fill the nombre with "(.*?)"$/) do |arg1|
  fill_in('user[name]', :with => arg1)
 end
+
+Then(/^I should receive a mail with user info$/) do
+  mail_store = "#{Padrino.root}/tmp/emails"
+  file = File.open("#{mail_store}/loiaconopablo@gmail.com", "r")
+  content = file.read
+  content.include?("Pablo").should be true
+  content.include?("Suarez").should be true
+  content.include?("loiaconopablo@gmail.com").should be true
+end

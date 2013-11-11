@@ -10,6 +10,32 @@ module Aulas
     enable :sessions
     
 
+    # set :delivery_method, :smtp => {
+    #   :address => 'smtp.gmail.com',
+    #   :port => 587,
+    #   :user_name => 'aulas.unq@gmail.com',
+    #   :password => 'aulas2013',
+    #   :authentication => :plain,
+    #   }
+
+    #set :delivery_method, :file => {    :location => "#{Padrino.root}/tmp/emails",    }
+
+    case Padrino.env
+      when :development then set :delivery_method, :smtp => {
+            :address => 'smtp.gmail.com',
+            :port => 587,
+            :user_name => 'aulas.unq@gmail.com',
+            :password => 'aulas2013',
+            :authentication => :plain,
+          }
+      when :travis      then set :delivery_method, :file => {    :location => "#{Padrino.root}/tmp/emails",    }
+      when :test         then set :delivery_method, :file => {    :location => "#{Padrino.root}/tmp/emails",    }
+      when :staging     then set :delivery_method, :file => {    :location => "#{Padrino.root}/tmp/emails",    }
+      when :production  then set :delivery_method, :file => {    :location => "#{Padrino.root}/tmp/emails",    }
+    end
+    
+    #set :delivery_method, :test
+    
     ##
     # Caching support
     #
