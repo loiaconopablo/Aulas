@@ -1,9 +1,11 @@
-Given(/^I access the Pedir Aula page$/) do
-   page.should have_content("Pedir Aula")
-end
+
 
 Given(/^I have "(.*?)" aula in Aulas$/) do |arg1|
 	visit '/pedidos/listar'
+  page.should have_content(arg1)
+end
+
+Given(/^I have "(.*?)" in Aulas$/) do |arg1|
   page.should have_content(arg1)
 end
 

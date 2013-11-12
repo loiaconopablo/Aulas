@@ -5,13 +5,14 @@ user = Admin.create(:email => 'admin@aulas.com',
 									 :type => 'admin', 
 									 :password => "admin")
 
-profesor = Docente.create(:email => 'nico@gmail.com',
+docenteDefault = Docente.create(:email => 'nico@gmail.com',
 									 :name => 'Nico', 
 									 :lastname => 'Paez',
-									 :type => 'profesor', 
+									 :type => 'docente', 
 									 :password => "nico")
 									 
 aula37b = Aula.create(:nombre => '37b',
+											:estado => false,
 											:capacidad => 20)
 											
 aula60 = Aula.create(:nombre => '60',

@@ -19,7 +19,7 @@ Aulas::App.controllers :users do
   #   'Hello world!'
   # end
 
-  get :newProfesor, :map => '/registracion_profesor' do
+  get :newDocente, :map => '/registracion_docente' do
     @user = User.new
     render 'users/new_docente'
   end
@@ -39,7 +39,7 @@ Aulas::App.controllers :users do
   end
 
   get :listarDocentes do
-    @docentes = User.all(:type => "profesor")
+    @docentes = User.all(:type => "docente")
     render 'users/listarDocentes'
   end 
 

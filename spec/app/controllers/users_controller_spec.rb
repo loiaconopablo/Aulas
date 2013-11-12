@@ -6,13 +6,13 @@ describe "UsersController" do
 		
 	  it "should response ok" do
 	  	Aulas::App.any_instance.should_receive(:render).with('users/new_docente')
-	  	get '/registracion_profesor'
+	  	get '/registracion_docente'
 	    last_response.should be_ok
 	  end
 
 	  it 'should render users/new' do
 	  	Aulas::App.any_instance.should_receive(:render).with('users/new_docente')
-	  	get '/registracion_profesor'
+	  	get '/registracion_docente'
 	  end
 
 	  it "should response ok" do

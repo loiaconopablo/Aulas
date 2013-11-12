@@ -7,6 +7,7 @@ class User
   property :crypted_password, String
   property :email, String
   property :type, String
+  has n, :reservas
   
   validates_presence_of :name
   validates_presence_of :lastname

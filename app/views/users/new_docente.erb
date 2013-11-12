@@ -1,4 +1,4 @@
-<h1>Registracion de nuevo profesor</h1>
+<h1>Registracion de nuevo docente</h1>
   <% form_for(@user, '/users/create') do |f| %> 
   <%= f.label :Nombre %>
   <%= f.text_field :name %>
@@ -6,7 +6,7 @@
   <%= f.text_field :lastname %>
   <%= f.label :Email %>
   <%= f.text_field :email %>
-  <input type="hidden" name="typeUser" value="profesor" />
+  <input type="hidden" name="typeUser" value="docente" />
   <br/>
   <input type="hidden" name="defaultPass" value="aula2013" />
   <br/>

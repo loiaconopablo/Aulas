@@ -5,10 +5,11 @@ Feature: Pedir Aula
 	para que luego el administrador analize esos pedidos.
 
   Background:
-    Given I am logged in as profesor
+    Given I am logged in as docente
   
   Scenario: Intentar reservar un aula con estado disponible
-    Given I access the Pedir Aula page
+    Given I access the aulas page
+    And I have "Listado de Aulas" in Aulas
     And I have "37b" aula in Aulas
     When I click "Pedir"  
 #    Then I should go to Confirmar Pedido

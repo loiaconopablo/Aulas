@@ -27,7 +27,7 @@ Feature: Login
       Then I should see "Alta Docente"
       And I should see "Crear Aula"
 
-  Scenario: Ver Opciones como profesor
-      Given I am logged in as profesor
+  Scenario: Ver Opciones como docente
+      Given I am logged in as docente
       Then I should not see "Alta Docente"
       And I should not see "Crear Aula"

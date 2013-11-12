@@ -23,22 +23,28 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li><%= link_to 'Home', url_for(:home, :index) %></li
-                <li><%= link_to 'Aulas', url_for(:aulas, :listar) %></li>
+                <li><%= link_to 'Home', url_for(:home, :index) %></li>
                 <li><%= link_to 'Docentes', url_for(:users, :listarDocentes) %></li>
+                
+                <% if not signed_in?%>
+                <li><%= link_to 'Aulas', url_for(:aulas, :listar) %></li>
+                <li><%= link_to 'Login', url_for(:sessions, :login) %></li>
+                <% end %>
                 
                 <% if signed_in_who?("admin") %>	
                 <li><%= link_to 'Aulas', url_for(:aulas, :listar) %></li>
                 <li><%= link_to 'Crear Aula', url_for(:aulas, :new) %></li>
-                <li><%= link_to 'Alta Docente', url_for(:users, :newProfesor) %></li>
+                <li><%= link_to 'Alta Docente', url_for(:users, :newDocente) %></li>
+                <% end %>
 
-								<% end %>
-								<% if signed_in? %>	
+								<% if signed_in_who?("docente") %>	
 								<li><%= link_to 'Pedir Aula', url_for(:pedidos, :listar) %></li>
-								<li><%= link_to 'Logout', url_for(:sessions, :destroy) %></li>
-								<% else%>	
-								<li><%= link_to 'Login', url_for(:sessions, :login) %></li>
+								 <% end %>
+									
+                <% if signed_in?%>
+                <li><%= link_to 'Logout', url_for(:sessions, :destroy) %></li>
 								<% end %>
+
               </ul>
             </div>
           </div>

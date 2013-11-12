@@ -4,9 +4,4 @@ Aulas::App.helpers do
   # def simple_helper_method
   #  ...
   # end
-
-  def estaReservada?
-		self.estado
-	end
-	
 end

@@ -11,10 +11,15 @@ class Aula
   	property :tipodeaula, String
 	property :observaciones, String
 	property :estado, Boolean
-	#estado en true->Reservada false->Disponible
+	#estado en true->Reservada false->Disponible , :default  => false
+	has n, :reservas
 	
 	validates_presence_of :nombre
 	validates_presence_of :capacidad
+
+	def estaReservada?
+		self.estado
+	end
 
 end
 

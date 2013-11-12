@@ -21,7 +21,7 @@ Then(/^I should see "(.*?)" in HomePage$/) do |arg1|
   page.should have_content(arg1)
 end
 
-Given(/^I am logged in as profesor$/) do
+Given(/^I am logged in as docente$/) do
  visit '/login'
   fill_in('user[email]', :with => 'nico@gmail.com')
   fill_in('user[password]', :with => 'nico')

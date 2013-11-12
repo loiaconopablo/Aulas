@@ -9,7 +9,7 @@ Feature: Nuevo Docente
   
   Scenario: Crear nuevo docente
     Given I access the new docente page
-    Then I should see "Registracion de nuevo profesor" 
+    Then I should see "Registracion de nuevo docente" 
     When I fill the nombre with "Pablo"
     And I fill the apellido with "Suarez"
     And I fill the email with "loiaconopablo@gmail.com"
@@ -19,7 +19,7 @@ Feature: Nuevo Docente
 
  Scenario: Crear nuevo docente con falta de campos
     Given I access the new docente page
-    Then I should see "Registracion de nuevo profesor" 
+    Then I should see "Registracion de nuevo docente" 
     When I fill the nombre with "Nico"
     And I fill the email with "npaez@gmail.com"
     And confirm the new docente    
