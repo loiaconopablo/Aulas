@@ -26,7 +26,7 @@ Aulas::App.controllers :pedidos do
       flash[:success] = 'Reserva realizada'
       redirect '/pedidos/listar'
     else
-      flash.now[:error] = 'Faltan completar el campo "Materia"'
+      flash.now[:error] = 'Falta completar el campo "Materia"'
       render 'pedidos/confirmar'
     end
   end

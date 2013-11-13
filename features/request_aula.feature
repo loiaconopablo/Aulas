@@ -11,20 +11,22 @@ Feature: Pedir Aula
     Given I access the aulas page
     And I have "Listado de Aulas" in Aulas
     And I have "37b" aula in Aulas
-    When I click "Pedir"  
-   # Then I should go to Confirmar Pedido		
+    When I click in "1" link "Pedir"  
+    Then I should go to Confirmar Pedido		
     
 
   Scenario: Intentar reservar un aula con estado reservada
     Given I access the aulas page
     And I have "60" aula in Aulas
-    When I click "Pedir"  
- #   Then I should see "El aula ya se encuentra reservada"
+    When I click in "2" link "Pedir" 
+    Then I should see "El aula ya se encuentra reservada"
 
   Scenario: Reservar un aula con estado disponible
     Given I access the aulas page
     And I have "37b" aula in Aulas
-    When I click "Pedir"  
-  #  Then I should see "Materia"
-  #  And I should see "Observaciones"
+    When I click in "1" link "Pedir" 
+    Then I should see "Materia"
+    And I should see "Observaciones"
+    
+    #cuando quede corregido el crear reserva, agregar steps de cuando clickcheo en crear, debo ver el msj de "Reserva realizada"
 
