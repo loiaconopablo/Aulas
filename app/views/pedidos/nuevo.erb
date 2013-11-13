@@ -6,6 +6,6 @@
 	
 <input type="hidden" name="aula_id" value="<%= @reserva.aula.id %>" />
 <br>
-  <%= f.submit "Create", :class => "btn btn-primary" %>
-  <%= link_to 'Cancel', url_for(:pedidos, :listar), :class => "btn btn-secondary" %>
+  <%= f.submit "Crear", :class => "btn btn-primary" %>
+  <%= link_to 'Cancelar', url_for(:pedidos, :listar), :class => "btn btn-secondary" %>
 <% end %>

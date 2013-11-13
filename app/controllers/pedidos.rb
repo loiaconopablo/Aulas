@@ -26,7 +26,9 @@ Aulas::App.controllers :pedidos do
       redirect '/pedidos/listar'
     else
       flash.now[:error] = 'Falta completar el campo "Materia"'
-      render 'pedidos/new'
+      @reserva = Reserva.new
+      @reserva.aula = Aula.get(params[:aula_id])
+      render 'pedidos/nuevo'
     end
   end
 end

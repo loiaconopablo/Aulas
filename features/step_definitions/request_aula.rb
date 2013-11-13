@@ -10,11 +10,15 @@ Given(/^I have "(.*?)" in Aulas$/) do |arg1|
 end
 
 When(/^I click "(.*?)"$/) do |link|
-  
+  click_button(link)
 end
 
 When(/^I click in "(.*?)" link "(.*?)"$/) do |number, link|
   page.all(:link, link)[number.to_i].click
+end
+
+Then(/^I complete the field Materia with "(.*?)"$/) do |arg1|
+  fill_in('reserva[materia]', :with => arg1)
 end
 	
 
