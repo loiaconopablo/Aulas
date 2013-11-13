@@ -14,6 +14,6 @@ When(/^I click "(.*?)"$/) do |link|
 end
 
 Then(/^I should go to Confirmar Pedido$/) do
-  visit '/pedidos/confirmar'
+  page.should have_content("Confirmar Pedido del Aula 37b")
 end
 
