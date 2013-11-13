@@ -1,0 +1,11 @@
+<h1>Confirmar Pedido del Aula  <%=@reserva.aula.nombre %> </h1> 
+
+<% form_for(@reserva, '/pedidos/create') do |f| %>
+ 
+  <%= partial 'pedidos/form', :locals => { :f => f } %>
+	
+<input type="hidden" name="aula_id" value="<%= @reserva.aula.id %>" />
+<br>
+  <%= f.submit "Create", :class => "btn btn-primary" %>
+  <%= link_to 'Cancel', url_for(:pedidos, :listar), :class => "btn btn-secondary" %>
+<% end %>

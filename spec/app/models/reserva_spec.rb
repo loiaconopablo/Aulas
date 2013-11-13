@@ -10,7 +10,7 @@ describe Reserva do
 		it { should respond_to( :materia ) }
 		it { should respond_to( :observaciones) }
 		it { should respond_to( :aula ) }
-		it { should respond_to( :docente ) }
+		it { should respond_to( :user ) }
 
 
 	end
