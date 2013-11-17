@@ -4,7 +4,7 @@ Feature: Aceptar Peticiones/Reservas
   Como admin quiero poder ver las peticiones que los docentes realizaron de cada aula en particular.
   Como admin quiero poder aceptar la reserva de un aula.
   Como admin quiero que le llegue un mail avisandole al profesor que su reserva del aula fue aceptada.
- 
+  
 
   Background:
     Given I am logged in as admin
@@ -30,7 +30,7 @@ Feature: Aceptar Peticiones/Reservas
     #Given I access the lista de reservas page
     #Then I should see "Listado de Peticiones"
     #And I have "Test Aula 101" aula in Peticiones
-    #When I click in "1" link "Aceptar"
+    #Then I click in "1" link "Aceptar"
     #Then I should see "Reserva Aceptada"
     #Given I access the aulas page
     #And I have "101" aula in Aulas
