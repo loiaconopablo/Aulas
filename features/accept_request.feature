@@ -21,8 +21,8 @@ Feature: Aceptar Peticiones/Reservas
     #Then the admin should receive a mail with the pedido generated.
    
   Scenario: Ver peticiones de aulas
-    #Given I access the lista de reservas page
-    #Then I should see "Listado de Peticiones"
+    Given I access the lista de reservas page
+    Then I should see "Listado de Peticiones"
     #And I have "Test Aula 101" aula in Peticiones
     #And I should see "Pepe"
 

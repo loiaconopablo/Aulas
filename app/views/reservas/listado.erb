@@ -1,0 +1,37 @@
+<h1>Listado de Peticiones</h1>
+<table class="table table-striped">
+	<tr>
+		<th>Aula</th>
+		<th>Materia</th>
+		<th>Docente</th>
+		<th>Observaciones</th>
+		<th>Acciones</th>
+	</tr>
+	<% @reservas.each do | reserva| %>
+
+	<tr>
+		<td>
+			<%= reserva.aula.nombre %>
+		</td>
+		<td>
+			<%= reserva.materia %>
+		</td>
+				
+		<td>
+			<%= reserva.user.name %>
+		</td>	
+		
+		<td>
+			<%= reserva.observaciones %>
+		</td>	
+		
+		<td>
+			<%= link_to 'Aceptar', url_for(:reservas, :validate, :reserva_id => reserva.id), :class => "btn btn-primary" %>
+		</td>		
+		
+	</tr>
+
+  <% end %>
+
+</table>
+

@@ -7,7 +7,7 @@ Then(/^the admin should receive a mail with the pedido generated\.$/) do
 end
 
 Given(/^I access the lista de reservas page$/) do
-  pending # express the regexp above with the code you wish you had
+  visit('reservas/listar')
 end
 
 Then(/^I have "(.*?)" aula in Peticiones$/) do |arg1|

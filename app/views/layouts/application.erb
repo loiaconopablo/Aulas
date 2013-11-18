@@ -35,6 +35,7 @@
                 <li><%= link_to 'Aulas', url_for(:aulas, :listar) %></li>
                 <li><%= link_to 'Crear Aula', url_for(:aulas, :new) %></li>
                 <li><%= link_to 'Alta Docente', url_for(:users, :newDocente) %></li>
+                <li><%= link_to 'Peticiones de Aula', url_for(:reservas, :listar) %></li>
                 <% end %>
 
 								<% if signed_in_who?("docente") %>	
