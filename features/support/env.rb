@@ -18,11 +18,26 @@ SimpleCov.start do
   add_group "Helpers", "app/helpers"
 end
 
+DataMapper::Logger.new($stdout, :all)
+DataMapper.auto_migrate!
+user = Admin.create(:email => 'admin@aulas.com',
+                   :name => 'Administrador',
+                   :lastname => 'Administrador',
+                   :type => 'admin', 
+                   :password => "admin")
+docenteDefault = Docente.create(:email => 'nico@gmail.com',
+                   :name => 'Nico', 
+                   :lastname => 'Paez',
+                   :type => 'docente', 
+                   :password => "nico")               
+aula37b = Aula.create(:nombre => '37b',
+                      :estado => false,
+                      :capacidad => 20)                
+aula60 = Aula.create(:nombre => '60',
+                    :capacidad => 20,
+                    :estado => true)                   
 ##
 # You can handle all padrino applications using instead:
 #   Padrino.application
 #Capybara.default_driver = :selenium
 Capybara.app = Aulas::App.tap { |app|  }
-#DataMapper.auto_migrate!
-#LO COMENTE PORQUE SINO FALLAN LOS TEST;; NO REALIZA EL SEED Y NO SE LLENAN LOS USUARIOS 
-  #A LA BASE
