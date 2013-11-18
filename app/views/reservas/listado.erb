@@ -5,6 +5,7 @@
 		<th>Materia</th>
 		<th>Docente</th>
 		<th>Observaciones</th>
+		<th>Estado</th>
 		<th>Acciones</th>
 	</tr>
 	<% @reservas.each do | reserva| %>
@@ -24,14 +25,37 @@
 		<td>
 			<%= reserva.observaciones %>
 		</td>	
-		
-		<td>
+		<% case reserva.esta_Aceptada %>
+			<% when "Pendiente" %>
+  			<td>
+			Pendiente de Aprobacion
+			</td>
+			<td>
 			<%= link_to 'Aceptar', url_for(:reservas, :validate, :reserva_id => reserva.id, ), :class => "btn btn-primary" %>
-		</td>		
+
+			<%= link_to 'Rechazar', url_for(:reservas, :rechazar, :reserva_id => reserva.id, ), :class => "btn btn-warning" %>
+			</td>
+			<% when "Aceptada" %>
+						<td>
+						Aceptada
+						</td>
+						<td>
+						"Por ahora no hay acciones"
+						</td>
+			<% when "Rechazada" %>
+						<td>
+						Cancelada
+						</td>
+						<td>
+						"Por ahora no hay acciones"
+						</td>
+	<% end %>	
+
 		
+	
 	</tr>
 
-  <% end %>
-
+ 
+<% end %>	
 </table>
 

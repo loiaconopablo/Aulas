@@ -20,6 +20,7 @@ Aulas::App.controllers :pedidos do
   post :create do
     @pedido = Reserva.new(params[:reserva])
     @pedido.user = current_user
+    @pedido.esta_Aceptada = "Pendiente"
     @pedido.aula = Aula.get(params[:aula_id])
     if @pedido.save
       flash[:success] = 'Reserva realizada'

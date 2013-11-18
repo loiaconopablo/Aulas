@@ -61,17 +61,21 @@
 		<td>
 			Reservada
 		</td>
+		<td>
+			<%= link_to 'Pedir', url_for(:pedidos, :new, :aula_id => aula.id), :class => "btn disabled" %>
+		</td>	
+
 		<% end %>	
 		
 		<% if !aula.estado %>	
 		<td>
 			Disponible
 		</td>
-		<% end %>	
-		
 		<td>
 			<%= link_to 'Pedir', url_for(:pedidos, :new, :aula_id => aula.id), :class => "btn btn-primary" %>
 		</td>		
+		<% end %>	
+		
 		
 	</tr>
 
