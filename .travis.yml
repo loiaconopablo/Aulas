@@ -7,7 +7,7 @@ script: PADRINO_ENV=travis bundle exec rake
 deploy:
   provider: heroku
   api_key: e8b644d6-6619-4d67-8066-1b2b72803dd4
-   app: aulas-testing
+  app: aulas-testing
   on:
     repo: loiaconopablo/Aulas
     branch: master
