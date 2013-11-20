@@ -8,28 +8,28 @@ Feature: Aceptar Peticiones/Reservas
 
   Background:
     Given I am logged in as admin
-    #Given I have a peticion with name "Test Aula 101" by "Pepe"
+    Given I have a peticion with name "Test Aula 101" by "Pepe"
    
   Scenario: Como docente pido aula y el sistema notifica al admin
-    #Given I am logged in as docente
-    #Given I access the aulas page
-    #And I have "Test Aula 101" aula in Aulas
-    #When I click in "1" link "Pedir"
-    #Then I complete the field Materia with "epers"
-    #When I click "Crear" 
-    #Then I should see "Reserva realizada"
-    #Then the admin should receive a mail with the pedido generated.
+    Given I am logged in as docente
+    Given I access the aulas page
+    And I have "Test Aula 101" aula in Aulas
+    When I click in "3" link "Pedir"
+    Then I complete the field Materia with "Epers"
+    When I click "Crear" 
+    Then I should see "Reserva realizada. Notificacion enviada correctamente"
+    Then the admin should receive a mail with the pedido generated.
    
   Scenario: Ver peticiones de aulas
     Given I access the lista de reservas page
     Then I should see "Listado de Peticiones"
-    #And I have "Test Aula 101" aula in Peticiones
-    #And I should see "Pepe"
+    And I have "Test Aula 101" aula in Peticiones
+    And I should see "Pepe"
 
   Scenario: Aceptar reserva de un aula y el sistema notifica al docente
-    #Given I access the lista de reservas page
-    #Then I should see "Listado de Peticiones"
-    #And I have "Test Aula 101" aula in Peticiones
+    Given I access the lista de reservas page
+    Then I should see "Listado de Peticiones"
+    And I have "Test Aula 101" aula in Peticiones
     #Then I click in "1" link "Aceptar"
     #Then I should see "Reserva Aceptada"
     #Given I access the aulas page

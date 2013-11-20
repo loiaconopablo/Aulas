@@ -22,9 +22,16 @@ Aulas::App.controllers :pedidos do
     @pedido.user = current_user
     @pedido.esta_Aceptada = "Pendiente"
     @pedido.aula = Aula.get(params[:aula_id])
+    @admin = User.get(1)
     if @pedido.save
-      flash[:success] = 'Reserva realizada'
-      redirect '/pedidos/listar'
+       begin
+      	Aulas::App.deliver(:notification, :email_notificacion_admin, @pedido, @admin)
+      	flash[:success] = 'Reserva realizada. Notificacion enviada correctamente'
+      	redirect '/pedidos/listar'
+      rescue StandardError
+  			flash.now[:success] = 'Reserva realizada. No se pudo enviar la notificacion al email registrado'
+				redirect '/pedidos/listar'
+			end	
     else
       flash.now[:error] = 'Falta completar el campo "Materia"'
       @reserva = Reserva.new

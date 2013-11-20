@@ -30,8 +30,13 @@ Aulas::App.controllers :users do
     @user.password= params[:defaultPass]  
     if @user.save
       flash[:success] = 'Docente creado'
-      Aulas::App.deliver(:notification, :email_notificacion_cuenta, @user)
-      redirect '/'
+      begin
+      	Aulas::App.deliver(:notification, :email_notificacion_cuenta, @user)
+      	redirect '/'
+      rescue StandardError
+  			flash.now[:error] = 'No se pudo enviar la notificacion al email registrado'
+  			render 'users/new_docente'
+			end	
     else
       flash.now[:error] = 'Completar todos los campos'
       render 'users/new_docente'

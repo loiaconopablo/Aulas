@@ -1,7 +1,7 @@
 Aulas::App.controllers :reservas do
 
   get :listar do
-  	@reservas = Reserva.all
+    @reservas = Reserva.all.sort_by {|reserva| reserva.aula.nombre}
   	render 'reservas/listado'
   end
   
