@@ -30,13 +30,18 @@ Feature: Aceptar Peticiones/Reservas
     Given I access the lista de reservas page
     Then I should see "Listado de Peticiones"
     And I have "Test Aula 101" aula in Peticiones
-    #Then I click in "1" link "Aceptar"
-    #Then I should see "Reserva Aceptada"
+    And I should see "Pendiente"
+    Then I click in "0" link "Aceptar"
+    Then I should see "Reserva Aceptada. Notificacion enviada correctamente"
+    And I should see "Aceptada"
     #Given I access the aulas page
     #And I have "101" aula in Aulas
     #And I should see "Pepe"
     #And I should see "Reservada"
-    #Then the professor "Pepe" should receive a mail with the reserva confirmation.
+    #And I should see "Epers"
+    Then the professor "Pepe" should receive a mail with the reserva confirmation.
+
+  Scenario: Aceptar reserva de un aula y el sistema notifica al docente
 
 
 

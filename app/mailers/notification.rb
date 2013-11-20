@@ -54,9 +54,18 @@ Aulas::App.mailer :notification do
     from 'no_reply@aulas.com'
     to admin.email
     subject 'Aulas: Nuevo pedido de Aula'
-    locals :reserva => pedido
+    locals :pedido => pedido
     content_type :plain
     render 'notification/email_notificacion_admin'
+  end
+
+  email :email_reserva_aceptada do | reserva, user |
+    from 'no_reply@aulas.com'
+    to user.email
+    subject 'Aulas: Su reserva aceptada'
+    locals :reserva => reserva
+    content_type :plain
+    render 'notification/email_reserva_aceptada'
   end
 
 end

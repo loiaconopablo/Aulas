@@ -12,7 +12,8 @@ Given(/^I have a peticion with name "(.*?)" by "(.*?)"$/) do |nombre_aula, nombr
   reserva = Reserva.create(:materia => 'Testing',
   												 :observaciones => '',
  													 :user => docente,
- 													 :aula => aula, 											
+ 													 :aula => aula, 
+                           :esta_Aceptada => "Pendiente",									
   											  )                      
 end
 
@@ -36,6 +37,13 @@ Then(/^I have "(.*?)" aula in Peticiones$/) do |arg1|
 end
 
 Then(/^the professor "(.*?)" should receive a mail with the reserva confirmation\.$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+  mail_store = "#{Padrino.root}/tmp/emails"
+  file = File.open("#{mail_store}/test@test.com", "r")
+  content = file.read
+  content.include?("Gestion De Aulas: Confirmacion de Reserva").should be true
+  content.include?(arg1).should be true
+  content.include?("Test Aula 101").should be true
+  content.include?("Testing").should be true
+  content.include?("ACEPTADA").should be true
 end
 
