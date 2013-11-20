@@ -19,3 +19,4 @@ case Padrino.env
   when :staging 		then DataMapper.setup(:default, ENV['DATABASE_URL'])
   when :production  then DataMapper.setup(:default, ENV['DATABASE_URL'])
 end
+

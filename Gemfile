@@ -36,6 +36,11 @@ group :staging, :production do
   gem 'dm-postgres-adapter'
 end
 
+# Gemfile
+group :production do
+ gem 'pg'
+end
+
 # Padrino Stable Gem
 gem 'padrino', '0.11.2'
 
