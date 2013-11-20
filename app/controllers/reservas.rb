@@ -12,21 +12,21 @@ Aulas::App.controllers :reservas do
   	@aulaAModificar = Aula.get(@aula.id)
   	@obse = "Se reservo a nombre de "+@docente.name+" para la materia "+@reserva.materia
   	@aulaAModificar.update(:estado => true, :observaciones => @obse)
-  	@reserva.update(:esta_Aceptada => "Aceptada")
+  	@reserva.update(:esta_aceptada => "Aceptada")
     begin
         Aulas::App.deliver(:notification, :email_reserva_aceptada, @reserva, @docente)
         flash[:success] = 'Reserva Aceptada. Notificacion enviada correctamente'
       rescue StandardError
         flash.now[:success] = 'Reserva Aceptada. No se pudo enviar la notificacion al email registrado'
     end 
-  	@reservasRestantes = Reserva.all(:aula => @reserva.aula) & Reserva.all(:esta_Aceptada => "Pendiente")
-    @reservasRestantes.update(:esta_Aceptada => "Rechazada")
+  	@reservasRestantes = Reserva.all(:aula => @reserva.aula) & Reserva.all(:esta_aceptada => "Pendiente")
+    @reservasRestantes.update(:esta_aceptada => "Rechazada")
     redirect 'reservas/listar'
   end
 
   get :rechazar do
   	@reserva = Reserva.get(params[:reserva_id])
-  	@reserva.update(:esta_Aceptada => "Rechazada")
+  	@reserva.update(:esta_aceptada => "Rechazada")
     flash[:success] = 'Se ha rechazado la peticion'
   	redirect 'reservas/listar'
   end

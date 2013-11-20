@@ -20,7 +20,7 @@ Aulas::App.controllers :pedidos do
   post :create do
     @pedido = Reserva.new(params[:reserva])
     @pedido.user = current_user
-    @pedido.esta_Aceptada = "Pendiente"
+    @pedido.esta_aceptada = "Pendiente"
     @pedido.aula = Aula.get(params[:aula_id])
     @admin = User.get(1)
     if @pedido.save

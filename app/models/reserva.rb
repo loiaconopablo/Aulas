@@ -5,7 +5,7 @@ class Reserva
 	property :id, Serial
 	property :materia, String
 	property :observaciones, String
-	property :esta_Aceptada, String
+	property :esta_aceptada, String
 	#estado en true->Aceptada false->Rechazada , null  => Pendiente
   	belongs_to :aula
 	belongs_to :user

@@ -13,7 +13,7 @@ Given(/^I have a peticion with name "(.*?)" by "(.*?)"$/) do |nombre_aula, nombr
   												 :observaciones => '',
  													 :user => docente,
  													 :aula => aula, 
-                           :esta_Aceptada => "Pendiente",									
+                           :esta_aceptada => "Pendiente",									
   											  )                      
 end
 
